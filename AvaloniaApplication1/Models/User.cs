@@ -12,4 +12,10 @@ public partial class User
     public string? Login { get; set; }
 
     public string? Password { get; set; }
+
+    public int? Idrole { get; set; }
+
+    public virtual Role? IdroleNavigation { get; set; }
+
+    public virtual ICollection<Teacher> Teachers { get; set; } = new List<Teacher>();
 }

@@ -27,8 +27,17 @@ build_property.ProjectDir = /home/kim/RiderProjects/AvaloniaApplication1/Avaloni
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
+[/home/kim/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/AdminPage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/home/kim/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/home/kim/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/Login.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/home/kim/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/kim/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/UsersDtg.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

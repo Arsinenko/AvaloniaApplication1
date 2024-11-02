@@ -1,0 +1,17 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaApplication1.Login">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top">Authorization</TextBlock>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox x:Name="LoginTextBox" Watermark="Enter login"></TextBox>
+            <TextBox x:Name="PasswordTextBox" Watermark="Enter password"></TextBox>
+            <StackPanel Orientation="Horizontal">
+                <Button>Login</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

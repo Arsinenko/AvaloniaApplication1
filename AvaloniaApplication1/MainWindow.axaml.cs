@@ -1,6 +1,11 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using AvaloniaApplication1.Models;
+using MsBox.Avalonia;
+using Tmds.DBus.Protocol;
 
 namespace AvaloniaApplication1;
 
@@ -8,19 +13,13 @@ public partial class MainWindow : Window
 {
     public MainWindow()
     {
+        // ListOfRoles();
         InitializeComponent();
+        NavigeteTo(new AdminPage());
     }
 
-    private void RegistrationBtn_OnClick(object? sender, RoutedEventArgs e)
+    public void NavigeteTo(UserControl page)
     {
-        string login = LoginBox.Text;
-        string password = PasswordBox.Text;
-        try
-        {
-            using (var db = CollegedbContext())
-            {
-                db.
-            }
-        }
+        MainContent.Content = page;
     }
 }
