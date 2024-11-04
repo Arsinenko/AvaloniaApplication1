@@ -15,7 +15,7 @@ public partial class MainWindow : Window
     {
         // ListOfRoles();
         InitializeComponent();
-        NavigeteTo(new AdminPage());
+        NavigeteTo(new Login());
     }
 
     public void NavigeteTo(UserControl page)

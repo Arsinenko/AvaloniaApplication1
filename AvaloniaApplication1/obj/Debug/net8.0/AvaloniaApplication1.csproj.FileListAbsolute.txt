@@ -171,3 +171,4 @@
 /home/kim/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/bin/Debug/net8.0/Markdown.Avalonia.dll
 /home/kim/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/bin/Debug/net8.0/MsBox.Avalonia.dll
 /home/kim/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/bin/Debug/net8.0/System.Reactive.dll
+/home/kim/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/obj/Debug/net8.0/AvaloniaApplication1.sourcelink.json

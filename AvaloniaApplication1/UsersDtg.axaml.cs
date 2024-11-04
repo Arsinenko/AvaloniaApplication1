@@ -20,12 +20,18 @@ public partial class UsersDtg : UserControl
         {
             var users = db.Users.ToList();
             DataGridUsr.ItemsSource = users;
-            
-            DataGridUsr.Columns.Add(new DataGridTextColumn {Header = "ID", Binding = new Avalonia.Data.Binding("id")});
-            DataGridUsr.Columns.Add(new DataGridTextColumn {Header = "Name", Binding = new Avalonia.Data.Binding("name")});
-            DataGridUsr.Columns.Add(new DataGridTextColumn {Header = "Login", Binding = new Avalonia.Data.Binding("login")});
-            DataGridUsr.Columns.Add(new DataGridTextColumn {Header = "Password", Binding = new Avalonia.Data.Binding("password")});
-            DataGridUsr.Columns.Add(new DataGridTextColumn {Header = "IdRole", Binding = new Avalonia.Data.Binding("idrole")});
         }
+        using (var db = new CollegedbContext())
+        {
+            var users = db.Users.ToList();
+            DataGridUsr.ItemsSource = users;
+        }
+
+        DataGridUsr.Columns.Clear(); // Очистите существующие колонки перед добавлением новых
+        DataGridUsr.Columns.Add(new DataGridTextColumn {Header = "ID", Binding = new Avalonia.Data.Binding("Id")});
+        DataGridUsr.Columns.Add(new DataGridTextColumn {Header = "Name", Binding = new Avalonia.Data.Binding("Name")});
+        DataGridUsr.Columns.Add(new DataGridTextColumn {Header = "Login", Binding = new Avalonia.Data.Binding("Login")});
+        DataGridUsr.Columns.Add(new DataGridTextColumn {Header = "Password", Binding = new Avalonia.Data.Binding("Password")});
+        DataGridUsr.Columns.Add(new DataGridTextColumn {Header = "IdRole", Binding = new Avalonia.Data.Binding("Idrole")});
     }
 }

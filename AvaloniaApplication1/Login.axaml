@@ -10,7 +10,7 @@
             <TextBox x:Name="LoginTextBox" Watermark="Enter login"></TextBox>
             <TextBox x:Name="PasswordTextBox" Watermark="Enter password"></TextBox>
             <StackPanel Orientation="Horizontal">
-                <Button>Login</Button>
+                <Button x:Name="LoginBtn" Click="LoginBtn_OnClick">Login</Button>
             </StackPanel>
         </StackPanel>
     </Grid>
