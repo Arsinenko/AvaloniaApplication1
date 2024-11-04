@@ -7,6 +7,13 @@
     <Grid>
         <DataGrid x:Name="DataGridUsr" AutoGenerateColumns="False"
                   IsReadOnly="True"
-                  Height="400" Width="600"></DataGrid>
+                  Height="400" Width="600">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Login" Binding="{Binding Login}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Password" Binding="{Binding Password}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </UserControl>
