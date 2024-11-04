@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using Avalonia;
 using Avalonia.Controls;
@@ -19,6 +20,11 @@ public partial class UsersDtg : UserControl
         using (var db = new CollegedbContext())
         {
             var users = db.Users.ToList();
+            foreach (var user in users)
+            {
+                Console.WriteLine($"{user.Id} {user.Name} {user.Login} {user.Password}");
+                
+            }
             DataGridUsr.ItemsSource = users;
         }
        

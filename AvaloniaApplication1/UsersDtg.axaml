@@ -2,14 +2,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:AvaloniaApplication1.Models"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="AvaloniaApplication1.UsersDtg">
+             x:Class="AvaloniaApplication1.UsersDtg"
+             x:DataType="models:User">
     <Grid>
         <DataGrid x:Name="DataGridUsr" AutoGenerateColumns="False"
                   IsReadOnly="True"
                   Height="400" Width="600">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Id" Binding="{Binding  Id}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Name" Binding="{Binding Name }"></DataGridTextColumn>
                 <DataGridTextColumn Header="Login" Binding="{Binding Login}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Password" Binding="{Binding Password}"></DataGridTextColumn>
