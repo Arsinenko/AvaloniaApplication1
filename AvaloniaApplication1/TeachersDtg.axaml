@@ -4,12 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:models="clr-namespace:AvaloniaApplication1.Models"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="AvaloniaApplication1.UsersDtg"
+             x:Class="AvaloniaApplication1.TeachersDtg"
              x:DataType="models:User">
+        
     <Grid>
-        <DataGrid x:Name="DataGridUsr" AutoGenerateColumns="False"
-                  IsReadOnly="True"
-                  Height="400" Width="600">
+        <DataGrid x:Name="DataGridTeacher" AutoGenerateColumns="False" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding  Id}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Name" Binding="{Binding Name }"></DataGridTextColumn>

@@ -11,8 +11,8 @@
         </Grid.ColumnDefinitions>
         
         <StackPanel Grid.Column="0" Background="Gray" Orientation="Vertical">
-            <Button>Users</Button>
-            <Button>Teachers</Button>
+            <Button x:Name="ShowUsersDtg" Click="ShowUsersDtg_OnClick">Users</Button>
+            <Button x:Name="ShowTeachersDtg" Click="ShowTeachersDtg_OnClick">Teachers</Button>
             <Button>Students</Button>
             <Button>Groups</Button>
         </StackPanel>
